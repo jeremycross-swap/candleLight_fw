@@ -206,15 +206,15 @@ THE SOFTWARE.
 
 // SILENT pin not connected
 
-	#define LEDRX_GPIO_Port	  GPIOB
-	#define LEDRX_Pin		  GPIO_PIN_0 /* green */
+	#define LEDRX_GPIO_Port	  GPIOA
+	#define LEDRX_Pin		  GPIO_PIN_1 /* green */
 	#define LEDRX_Mode		  GPIO_MODE_OUTPUT_PP
-	#define LEDRX_Active_High 1
+//	#define LEDRX_Active_High 0
 
-	#define LEDTX_GPIO_Port	  GPIOB
-	#define LEDTX_Pin		  GPIO_PIN_1 /* blue */
+	#define LEDTX_GPIO_Port	  GPIOA
+	#define LEDTX_Pin		  GPIO_PIN_0 /* blue */
 	#define LEDTX_Mode		  GPIO_MODE_OUTPUT_PP
-	#define LEDTX_Active_High 0
+//	#define LEDTX_Active_High 0
 
 #elif defined(BOARD_usb2can)
 	#define USBD_PRODUCT_STRING_FS	 (uint8_t*) "USB2CAN RCA gs_usb"
@@ -362,3 +362,13 @@ THE SOFTWARE.
 #else
 	#error please define BOARD
 #endif
+
+#define LEDRX_GPIO_Port	  GPIOA
+#define LEDRX_Pin		  GPIO_PIN_1 /* green */
+#define LEDRX_Mode		  GPIO_MODE_OUTPUT_PP
+#define LEDRX_Active_High 0
+
+#define LEDTX_GPIO_Port	  GPIOA
+#define LEDTX_Pin		  GPIO_PIN_0 /* blue */
+#define LEDTX_Mode		  GPIO_MODE_OUTPUT_PP
+#define LEDTX_Active_High 1
