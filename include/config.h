@@ -205,7 +205,7 @@ THE SOFTWARE.
 	#define CAN_CLOCK_SPEED			 48000000
 
 // SILENT pin not connected
-
+// These are the pins we use
 	#define LEDRX_GPIO_Port	  GPIOA
 	#define LEDRX_Pin         GPIO_PIN_1 /* green */
 	#define LEDRX_Mode        GPIO_MODE_OUTPUT_PP
